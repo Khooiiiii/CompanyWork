@@ -33,3 +33,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+companywork-20b57-firebase-adminsdk-vj3md-1a0c2c0c60.json
+google-services.json
