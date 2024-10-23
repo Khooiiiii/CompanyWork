@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     flexDirection: "row",
     alignItems: "center",
-    width: "80%",
+    width: "100%",
     justifyContent: "space-between",
   },
   title: {
