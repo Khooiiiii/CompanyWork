@@ -1,10 +1,13 @@
 const express = require("express");
 const admin = require("firebase-admin");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 const port = 3000;
 const host = "localhost";
+
+app.use("/.well-known", express.static(path.join(__dirname, ".well-known")));
 
 // Initialize Firebase Admin with explicit project ID
 const serviceAccount = require("../companywork-20b57-firebase-adminsdk-vj3md-eac734376c.json");
@@ -170,7 +173,7 @@ app.post("/sendSilentNotification", async (req, res) => {
   }
 
   const message = {
-    data: { silent: "false" },
+    data: { silent: "no" },
     topic: topic,
     android: {
       priority: "high",
@@ -254,5 +257,5 @@ async function sendSilentNotification() {
 app.listen(port, host, () => {
   console.log(`Server is running on http://${host}:${port}`);
   //call to send silent notification
-  sendSilentNotification();
+  //sendSilentNotification();
 });

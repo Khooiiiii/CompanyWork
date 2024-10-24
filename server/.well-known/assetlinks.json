@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.khoila1.CompanyWork",
+      "sha256_cert_fingerprints": [
+        "91:A6:96:B6:64:29:F9:49:23:64:C3:A2:5B:C7:2D:EA:4C:C5:ED:6B:59:CA:B4:1A:14:33:3F:86:EA:B0:66:23"
+      ]
+    }
+  }
+]

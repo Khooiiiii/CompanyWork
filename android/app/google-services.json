@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436995641262",
+    "project_id": "companywork-20b57",
+    "storage_bucket": "companywork-20b57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436995641262:android:13c05ffc72040a39d6423f",
+        "android_client_info": {
+          "package_name": "com.khoila1.CompanyWork"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvHqLHkskmYiu98CNH6MrjBjOwS2aG5to"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
