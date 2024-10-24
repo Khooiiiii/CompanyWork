@@ -1,13 +1,13 @@
 import { Stack } from "expo-router";
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import messaging from "@react-native-firebase/messaging";
 
 const queryClient = new QueryClient();
+
+// Handle background messages using setBackgroundMessageHandler
+messaging().setBackgroundMessageHandler(async (remoteMessage) => {
+  console.log("Message handled in the background!", remoteMessage);
+});
 
 export default function RootLayout() {
   return (

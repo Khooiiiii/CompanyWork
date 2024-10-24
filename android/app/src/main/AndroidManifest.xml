@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -26,10 +26,11 @@
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="companywork"/>
         <data android:scheme="com.khoila1.CompanyWork"/>
+        <data android:scheme="exp+companywork"/>
       </intent-filter>
       <intent-filter android:autoVerify="true" data-generated="true">
         <action android:name="android.intent.action.VIEW"/>
-        <data android:scheme="https" android:host="my-custom-domain.ngrok.io" android:pathPrefix="/records"/>
+        <data android:scheme="https" android:host="dove-cuddly-similarly.ngrok-free.app" android:pathPrefix="/"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <category android:name="android.intent.category.DEFAULT"/>
       </intent-filter>
